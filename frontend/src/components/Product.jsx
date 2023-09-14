@@ -9,8 +9,14 @@ const Product = ({product}) => {
         </a>
 
         <Card.Body>
-            <a href={`/product/${product._id}`}></a>
+            <a href={`/product/${product._id}`}>
+                <Card.Title>{product.name}</Card.Title>
+            </a>
         </Card.Body>
+
+        <Card.Text as="h3">
+            ${product.price}
+        </Card.Text>
 
     </Card>
   )
