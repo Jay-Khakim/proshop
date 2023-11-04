@@ -15,7 +15,7 @@ const app = express();
 
 //Body parser middleware
 app.use(express.json())
-app.use(express.urlencoded({extendet: false}))
+app.use(express.urlencoded({extended: false}))
 
 //Cookie parser middleware
 app.use(cookieParser())
