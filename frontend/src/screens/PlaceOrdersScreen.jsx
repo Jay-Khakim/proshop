@@ -142,7 +142,7 @@ const PlaceOrdersScreen = () => {
                                     type="button"
                                     className="btn-block"
                                     disabled={cart.cartItems.length === 0}
-                                    onClick={placeOrderhandler}>
+                                    onClick={placeOrderHandler}>
                                     Place Order
                                 </Button>
                                 {isLoading && <Loader/>}

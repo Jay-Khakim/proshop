@@ -13,7 +13,7 @@ const RegisterScreen = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [cofirmPassword, setCofirmPassword] = useState('')
+    const [confirmPassword, setConfirmPassword] = useState('')
 
     const distpatch = useDispatch();
     const navigate = useNavigate();
@@ -90,7 +90,7 @@ const RegisterScreen = () => {
                     <Form.Control
                         type='password'
                         placeholder='Confirm password'
-                        value={confirmpassword}
+                        value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
