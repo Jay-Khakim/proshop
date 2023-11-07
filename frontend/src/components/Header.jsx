@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import { useLogoutMutation } from '../slices/usersApiSlice'
 import {logout} from "../slices/authSlice"
 import logo from '../assets/logo.png';
+import { resetCart } from '../slices/cartSlice';
 
 const Header = () => {
 
@@ -14,7 +15,7 @@ const Header = () => {
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
+    
     const [logoutApiCall] = useLogoutMutation();
 
     const logoutHandler = async () => {
@@ -23,7 +24,7 @@ const Header = () => {
           dispatch(logout());
           // NOTE: here we need to reset cart state for when a user logs out so the next
           // user doesn't inherit the previous users cart and shipping
-          dispatch(logout());
+          dispatch(resetCart());
           navigate('/login');
         } catch (err) {
           console.error(err);
