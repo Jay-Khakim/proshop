@@ -24,12 +24,10 @@ const ProfileScreen = () => {
 
     const {data: orders, isLoading, error} = useGetMyOrdersQuery()
 
-    useEffect(()=>{
-        if(userInfo){
-            setName(userInfo.name)
-            setEmail(userInfo.email)
-        } 
-    }, [userInfo.name, userInfo.email]);
+    useEffect(() => {
+        setName(userInfo.name);
+        setEmail(userInfo.email);
+      }, [userInfo.email, userInfo.name]);
 
 
 
