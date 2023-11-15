@@ -9,3 +9,6 @@ router.route('/:id').get(getProductById).put(protect, admin, updateProduct).dele
 router.route('/:id/reviews').post(protect, createProductReview);
 
 export default router;
+
+
+
