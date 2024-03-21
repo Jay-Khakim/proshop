@@ -1,6 +1,6 @@
-# ProShop - new changes are upcoming*
+# Apex Mall - new changes are upcoming*
 
-> Pro(n) - The top or highest part of something. I named this website ProShop because I want it to mean the best and the highest quality and service
+> Apex(n) - The top or highest part of something. I named this website Apex Mall because I want it to mean the best and the highest quality and service
 
 This repository contains an E-commerce web app built with  MERN stack
 
