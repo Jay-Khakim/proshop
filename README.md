@@ -4,7 +4,7 @@
 
 This repository contains an E-commerce web app built with  MERN stack
 
-The goal of this project is to provide a simple, easy-to-use prediction model that can be used by doctors and medical professionals to quickly and accurately predict whether a patient has diabetes.
+The goal of this project is to create a simple, easy-to-use e-commerce platform that can be used by seller and buyers
 
 ### Tech Stack and Packages
 
